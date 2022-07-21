@@ -12,10 +12,7 @@
 
 <body>
     <header>
-        <h1>Curso de Inglês Mairo Vergara<br><span>Super Promoção de Julho</span>
-        </h1>
-        <!-- <h2>Somente nos dias 11, 12 e 13 de julho!</h2>
-        <h2>Adquira a versão completa do Curso de Inglês Mairo Vergara pelo menor preço possível.</h2> -->
+        <h1>Curso de Inglês Mairo Vergara<br><span>Super Promoção de Julho</span></h1>
         <h2>Somente nos dias 11, 12 e 13 de julho!</h2>
         <h2 id="h2header">Adquira a versão completa do Curso de Inglês Mairo
             Vergara
@@ -61,16 +58,30 @@
             <p>Para participar, basta clicar no botão ENTRAR NA LISTA PRIORITÁRIA aqui nesta página e informar seus
                 dados. Assim você garante que será avisado quando a Super Promoção começar no dia 11 de julho.</p>
         </section>
-        <section class="contador">
-            <h2>A promoção termina em:</h2>
-            <div class="numeros">
-                <div id="days"></div>
-                <div id="hours"></div>
-                <div id="minutes"></div>
-                <div id="seconds"></div>
+        <section class="contagem">
+            <div class="conteudocont">
+                <h2>A promoção termina em:</h2>
+                <div class="numeros">
+                    <div class="customcount">
+                        <span id="days"></span>
+                        <p>days</p>
+                    </div>
+                    <div class="customcount">
+                        <span id="hours"></span>
+                        <p>hours</p>
+                    </div>
+                    <div class="customcount">
+                        <span id="minutes"></span>
+                        <p>minutes</p>
+                    </div>
+                    <div class="customcount">
+                        <span id="seconds"></span>
+                        <p>seconds</p>
+                    </div>
+                </div>
+                <button><a href="https://pay.hotmart.com/P13510102I?off=irhfbmew&split=12&bid=1657802342929"
+                        target="_blank" class="externo">QUERO ADQUIRIR A VERSÃO COMPLETA NA PROMOÇÃO</a></button>
             </div>
-            <button><a href="https://pay.hotmart.com/P13510102I?off=irhfbmew&split=12&bid=1657802342929" target="_blank"
-                    class="externo">QUERO ADQUIRIR A VERSÃO COMPLETA NA PROMOÇÃO</a></button>
         </section>
         <section class="footer">
             <p>© 2022 Reis Vergara Idiomas. Todos os direitos reservados.</p>
@@ -81,30 +92,24 @@
                 target="_blank" class="externo">@joao.luisrm</a></p>
     </footer>
     <script>
-        // Set the date we're counting down to
         var countDownDate = new Date("Jul 27, 2022 23:59:59").getTime();
 
-        // Update the count down every 1 second
         var x = setInterval(function () {
 
-            // Get today's date and time
             var now = new Date().getTime();
 
-            // Find the distance between now and the count down date
             var distance = countDownDate - now;
 
-            // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Output the result in an element with id="demo"
             document.getElementById("days").innerHTML = days;
             document.getElementById("hours").innerHTML = hours;
             document.getElementById("minutes").innerHTML = minutes;
             document.getElementById("seconds").innerHTML = seconds;
-            // If the count down is over, write some text 
+
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "EXPIRED";
