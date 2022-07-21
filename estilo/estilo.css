@@ -203,14 +203,16 @@ main .detalhespromo ul li {
 }
 
 main .contagem {
+    max-width: 915px;
     padding: 0px 9px;
+    margin: auto;
 }
 
-main .contagem .conteudocont {
+/* main .contagem .conteudocont {
     width: 100%;
     max-width: 915px;
     margin: auto;
-}
+} */
 
 main .contagem .conteudocont h2 {
     font-family: var(--fonte1);
@@ -222,11 +224,27 @@ main .contagem .conteudocont h2 {
 
 main .contagem .conteudocont .numeros {
     display: flex;
-    padding: 32px 53px 0px 53px;
+    /* padding: 32px 53px 0px 53px; */
+    /* padding: 32px 0px 0px 53px; */
+    margin-top: 32px;
+    justify-content: center;
 }
 
-main .contagem .conteudocont .numeros .customcount {
+/* main .contagem .conteudocont .numeros .customcount {
     padding: 0px 30px 0px 0px;
+} */
+
+main .contagem .conteudocont .numeros .customcount span#days {
+    margin-right: 15px;
+}
+
+main .contagem .conteudocont .numeros .customcount span#hours,
+span#minutes {
+    margin: 0px 15px 0px 15px;
+}
+
+main .contagem .conteudocont .numeros .customcount span#seconds {
+    margin-left: 15px;
 }
 
 main .contagem .conteudocont .numeros .customcount span#days,
@@ -239,7 +257,8 @@ span#seconds {
     display: block;
     width: 179.08px;
     height: 179.08px;
-    padding: 43px 0px 0px;
+    /* padding: 43px 0px 0px; */
+    padding-top: 20%;
     line-height: 1;
     position: relative;
     color: rgba(255, 255, 255, 0.9);

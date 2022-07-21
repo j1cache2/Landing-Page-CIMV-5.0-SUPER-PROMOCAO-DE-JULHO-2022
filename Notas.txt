@@ -110,3 +110,26 @@ main .contagem .conteudocont .numeros ul li {
     font-size: 96px;
 }
  */
+
+
+
+
+
+Ver essa possível solução: 
+
+
+
+main .contagem .conteudocont {
+    width: 100%;
+    /* max-width: 915px; */
+    margin: auto;
+    position: relative;
+    /* display: inline-block; */
+    /* margin: auto; */
+}
+
+
+
+
+
+
