@@ -227,14 +227,32 @@ main .contagem .conteudocont .numeros {
     /* padding: 32px 53px 0px 53px; */
     /* padding: 32px 0px 0px 53px; */
     margin-top: 32px;
+    /* justify-content: center; */
     justify-content: center;
 }
 
-/* main .contagem .conteudocont .numeros .customcount {
-    padding: 0px 30px 0px 0px;
+
+/* main .contagem .conteudocont .numeros {
+    display: flex;
+    justify-content: space-around;
+    margin: 32px auto 0px;
 } */
 
-main .contagem .conteudocont .numeros .customcount span#days {
+main .contagem .conteudocont .numeros {
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 838px;
+}
+
+main .contagem .conteudocont .numeros .customcount {
+    /* padding: 0px 30px 0px 0px; */
+    max-width: 190.5px;
+    width: calc(100% - 10px);
+}
+
+/* main .contagem .conteudocont .numeros .customcount span#days {
     margin-right: 15px;
 }
 
@@ -245,20 +263,36 @@ span#minutes {
 
 main .contagem .conteudocont .numeros .customcount span#seconds {
     margin-left: 15px;
-}
+} */
 
 main .contagem .conteudocont .numeros .customcount span#days,
 span#hours,
 span#minutes,
 span#seconds {
     font-family: var(--fonte3);
+    /* font-size: 96px; */
     font-size: 96px;
     text-align: center;
     display: block;
+
+    /* TESTANDO CALC 
+    
     width: 179.08px;
     height: 179.08px;
+    
+    */
+
+    max-height: 177.08px;
+    height: calc(100% - 10px);
+
     /* padding: 43px 0px 0px; */
-    padding-top: 20%;
+    /* padding-top: 21%; */
+
+    /* padding: 20% 12%; */
+
+    padding: 21% 12%;
+
+
     line-height: 1;
     position: relative;
     color: rgba(255, 255, 255, 0.9);

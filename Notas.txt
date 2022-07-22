@@ -129,7 +129,14 @@ main .contagem .conteudocont {
 }
 
 
+max-width: 194.5px;
+width: calc(100% - 10px);
 
+
+max-height: 177.08px;
+height: calc(100% - 10px);
+
+    
 
 
 
