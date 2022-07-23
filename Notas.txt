@@ -140,3 +140,41 @@ height: calc(100% - 10px);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .contagem .conteudocont .numeros {
+    margin: 0 auto;
+    padding: 12px;
+    /* text-align: center; */
+    width: 100%;
+    max-width: 863px;
+}
+
+main .contagem .conteudocont .numeros .customcount {
+    /* padding: 0px 30px 0px 0px; */
+    margin-right: 30px;
+    width: -webkit-fill-available;
+    /* max-width: 190.5px; */
+    /* height: -webkit-fill-available; */
+    /* max-height: 225px; */
+}

@@ -238,33 +238,63 @@ main .contagem .conteudocont .numeros {
     margin: 32px auto 0px;
 } */
 
-main .contagem .conteudocont .numeros {
+/* main .contagem .conteudocont .numeros {
     margin: 0 auto;
     padding: 12px;
     text-align: center;
     width: 100%;
     max-width: 838px;
+} */
+
+main .contagem .conteudocont .numeros {
+    margin: 0 auto;
+    padding: 12px;
+    /* text-align: center; */
+    width: 100%;
+    max-width: 863px;
+}
+
+
+main .contagem .conteudocont .numeros .customcount {
+
+
+    /* padding: 0px 30px 0px 0px; */
+
+    /* max-width: 190.5px;
+    width: calc(100% - 10px); */
 }
 
 main .contagem .conteudocont .numeros .customcount {
-    /* padding: 0px 30px 0px 0px; */
+    /* padding: 0px 30px 0px 0px;
+    width: -webkit-fill-available;
     max-width: 190.5px;
-    width: calc(100% - 10px);
+    height: -webkit-fill-available;
+    max-height: 232px; */
 }
 
-/* main .contagem .conteudocont .numeros .customcount span#days {
-    margin-right: 15px;
+
+
+main .contagem .conteudocont .numeros .customcount {
+    /* padding: 0px 30px 0px 0px; */
+    /* margin-right: 30px; */
+    margin: 0px 15px;
+    width: -webkit-fill-available;
+    /* max-width: 190.5px; */
+    /* height: -webkit-fill-available; */
+    /* max-height: 225px; */
 }
 
+/*
+main .contagem .conteudocont .numeros .customcount span#days {
+margin-right: 15px;
+}
 main .contagem .conteudocont .numeros .customcount span#hours,
 span#minutes {
     margin: 0px 15px 0px 15px;
 }
-
 main .contagem .conteudocont .numeros .customcount span#seconds {
     margin-left: 15px;
 } */
-
 main .contagem .conteudocont .numeros .customcount span#days,
 span#hours,
 span#minutes,
@@ -274,25 +304,15 @@ span#seconds {
     font-size: 96px;
     text-align: center;
     display: block;
-
-    /* TESTANDO CALC 
-    
+    /*TESTANDO CALC  
     width: 179.08px;
-    height: 179.08px;
-    
-    */
-
-    max-height: 177.08px;
-    height: calc(100% - 10px);
-
+    height: 179.08px;*/
+    /* max-height: 177.08px;
+    height: calc(100% - 10px); */
     /* padding: 43px 0px 0px; */
     /* padding-top: 21%; */
-
     /* padding: 20% 12%; */
-
     padding: 21% 12%;
-
-
     line-height: 1;
     position: relative;
     color: rgba(255, 255, 255, 0.9);
@@ -332,4 +352,18 @@ footer {
     font-size: 14px;
     height: 100%;
     padding: 5px;
+}
+
+@media(max-width: 891px) {
+
+    main .contagem .conteudocont .numeros .customcount span#days,
+    span#hours,
+    span#minutes,
+    span#seconds {
+        font-size: 80px;
+    }
+
+    main .contagem .conteudocont .numeros .customcount p {
+        font-size: 30px;
+    }
 }
